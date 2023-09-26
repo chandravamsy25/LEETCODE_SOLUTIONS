@@ -2,35 +2,25 @@ class Solution {
 public:
     bool check(vector<int>& nums) {
        
-        vector<int>temp1(nums.size());
-        temp1=nums;
-        sort(temp1.begin(),temp1.end());
-        
+        int n=nums.size();
+        int count=0;
 
-        
-        vector<int>temp(nums.size());
-        
-        int k=0;
-        while(k<nums.size())
+        for(int i=1;i<n;i++)
         {
-            for(int i=0;i<nums.size();i++)
+            if(nums[i-1]>nums[i])
             {
-                temp[(i+k)%nums.size()]=temp1[i];
+                count++;
             }
-
-            if(temp == nums)
-            {
-                return true;
-            }
-            else
-            {
-                k++;
-            }
-
-
+            
         }
-        return false ;
-        
+        if(nums[n-1]>nums[0])
+            {
+                count++;
+            }
+
+
+        return count<=1;
+
 
         
     }
