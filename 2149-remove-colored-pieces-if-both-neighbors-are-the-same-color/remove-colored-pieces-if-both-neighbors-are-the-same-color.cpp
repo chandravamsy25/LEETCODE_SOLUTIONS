@@ -27,18 +27,7 @@ public:
             i++;
            
         }
-        if(alice==bob)
-        {
-            return false;
-        }
-        else if(alice>bob)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return alice-bob >=1;
 
        
     } 
