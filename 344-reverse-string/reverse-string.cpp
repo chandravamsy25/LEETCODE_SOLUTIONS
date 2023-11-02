@@ -6,11 +6,7 @@ public:
         
         while(left<right)
         {
-            int temp=s[left];
-            s[left]=s[right];
-            s[right]=temp;
-            left++;
-            right--;
+            swap(s[right--],s[left++]);
         }
         
     }
