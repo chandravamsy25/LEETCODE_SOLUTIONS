@@ -6,22 +6,20 @@ public:
         string word11;
         string word22;
 
-        
-
-        for(int i=0;i<word1.size();i++)
+    
+        for(auto i:word1)
         {
-            word11=word11+word1[i];
+            word11+=i;
         }
 
-        for(int j=0;j<word2.size();j++)
+        for(auto i:word2)
         {
-            word22=word22+word2[j];
+            word22+=i;
         }
         
-        if(word11==word22) return true;
-        
+    
 
-        return false;
+        return word11==word22;
         
     }
 };
