@@ -1,19 +1,19 @@
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
-        vector<int> arr;
+        int pointer=0;
         for(int i=0;i<nums.size();i++)
         {
             if(nums[i]!=val)
             {
-                arr.emplace_back(nums[i]);
-            }
-        }
-        
-        nums=arr;
-        
+                nums[pointer]=nums[i];
+                pointer++;
 
-        return nums.size();
-        
+            }
+
+            
+        }
+        return pointer;
     }
+    
 };
