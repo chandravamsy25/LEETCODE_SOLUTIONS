@@ -12,7 +12,7 @@ public:
             }
             j++;
         }
-        if(i>=m) return true;
+        if(i==m) return true;
         
         return false;
     }
