@@ -3,10 +3,7 @@ public:
     vector<int> relativeSortArray(vector<int>& arr1, vector<int>& arr2) {
         vector<int>arr3;
         vector<int>arr4;
-        
         int count;
-        sort(arr3.begin(),arr3.end());
-        vector<bool>freq(false);
        
         for(int i=0;i<arr1.size();i++)
         {
