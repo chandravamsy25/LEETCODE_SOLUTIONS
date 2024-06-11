@@ -18,7 +18,7 @@ public:
             }
             if(count==0) arr4.emplace_back(arr1[i]);
         }
-        
+        sort(arr4.begin(),arr4.end());
         
         for(int i=0;i<arr2.size();i++)
         {
@@ -29,7 +29,7 @@ public:
                 }
             }
         }
-        sort(arr4.begin(),arr4.end());
+        
         for(int i=0;i<arr4.size();i++){
             arr3.emplace_back(arr4[i]);
         }
