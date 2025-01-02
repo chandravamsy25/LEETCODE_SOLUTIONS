@@ -2,9 +2,9 @@ class Solution {
 public:
     vector<int> vowelStrings(vector<string>& words, vector<vector<int>>& queries) {
         int n = words.size();
-        vector<int> prefixSum(n + 1, 0); // Prefix sum array to count valid vowel strings
+        vector<int> prefixSum(n + 1, 0); 
         
-        // Precompute the prefix sums
+      
         for (int i = 0; i < n; i++) {
             int length = words[i].length();
             if ((words[i][0] == 'a' || words[i][0] == 'e' || words[i][0] == 'i' || 
@@ -20,7 +20,7 @@ public:
         
         vector<int> ans(queries.size());
         
-        // Answer each query using the prefix sums
+   
         for (int i = 0; i < queries.size(); i++) {
             int l = queries[i][0];
             int r = queries[i][1];
