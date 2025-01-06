@@ -3,8 +3,7 @@ public:
     vector<int> minOperations(string boxes) {
 
         vector<int>values(boxes.size());
-        int total_index=0;
-        int number_of_ones=0;
+        int total_index=0, number_of_ones=0;
         int prev_ones=0,prev_index=0;
 
         for(int i=0;i<boxes.size();i++){
@@ -14,7 +13,6 @@ public:
                 number_of_ones++;
             }
         }
-        cout<<total_index<<"hi"<<number_of_ones;
 
         for(int i=0;i<boxes.size();i++){
             if(boxes[i]=='0'){
